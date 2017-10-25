@@ -1,0 +1,114 @@
+SPRING DATA JPA : 
+
+What is Spring Data JPA?
+Enhances standard JPA with Spring , simplifies DAO , Repository Generator , Query DSL is needed , Auditing , Paging.
+
+What is DSL?
+
+Domain Specific Language along with JPA entity attributes.
+
+Disadvantage of Data JPA and Hibernate with maximum number of writes?
+
+Advantage of using Spring Data JPA?
+
+What does Spring Data Commons define?
+
+How to import Spring Data JPA onto the classpath using Maven?
+
+How to configure the application to look for JPA repositories in XML and Java Configuration?
+
+What is the namespace that I have to add to enable my jpa repository scan in XML?
+
+What are repositories in terms of Spring?
+
+Define the repository architecture?
+
+What are the two parameters that JpaRepository interface takes?
+
+What are some of the features of JpaRepository?
+
+Name some of the repository interfaces that JpaRepository extends?
+
+How to customize your own JpaRepository?
+
+How to convert existing repository to a JpaRepository?
+
+What is the use of flush? SQL changes before commit.
+
+How to use JpaRepository as a proxy to use along with exisiting repository implementation?
+
+Advantages of using Query DSL?
+
+Give examples for And ,Or , Equals , Is , Not , Like , Not Like
+StartingWith , EndingWith , Containing ,  LessThan , LessThanEqual , GreaterThan , GreaterThanEqual
+
+Give example for date manipulation? Before , After , Between for dates
+
+Give example for keyword True,False?
+
+Give example for keyword IsNull , IsNotNull , NotNull?
+
+Give example for keyword In and Not In?
+
+Give example for IgnoreCase? findByStateIgnoreCaseStartingWith as example.
+
+Give example for OrderBy? findByStateOrderByCountryAsc or findByStateOrderByCountryDesc as example.
+
+Give example for First , Top and Distinct Keyword? findFirstByStateLike or findTop5ByStateLike or findDistinctManufacturerByStateLike
+
+What is the usage of @Query annotation?
+
+How are the parameters mapped with @Query annotation placeholders?
+
+What is the usage of @Param annotation?
+
+nativeQuery = true. Singnificance?
+
+What is the usage of @Modifying annotation? 
+
+How does @NamedQuery work?
+
+How does @NamedNativeQuery work?
+
+How to implement paging and sorting in Spring Data Jpa?
+
+How to implement a custom repository along with jpa respository?
+
+
+ModelJpaRepositoryCustom - Define all custom methods
+ModelJpaRepository extends JpaRepository , ModelJpaRepositoryCustom 
+ModelJpaRepositoryImpl extends ModelJpaRepositoryCustom  - Define implementation for custom methods of ModelJpaRepositoryCustom.
+
+Hence ModelJpaRepository will contain both JpaRepository basic features as well as custom features defined in ModelJpaRepositoryCustom 
+
+How is auditing support done in Spring Data Jpa? @CreatedBy , @CreatedDate , @LastModifiedBy , @LastModifiedDate
+
+How to configure transaction properties in JPA?
+
+Can you describe the properties for @Transactional annotation?
+
+By default , what are the types of exceptions that the transaction rollbacks for?
+
+Can you name the XML configuration for transactions to be enabled and used in your project with hibernate and JPA?
+
+What is the usage of @EnableTransactionManagement annotation?
+
+@Transactional is a class or method level annotation?
+
+Explain the Spring Framework transaction stratergy?
+
+public interface PlatformTransactionManager {
+
+    TransactionStatus getTransaction(
+            TransactionDefinition definition) throws TransactionException;
+
+    void commit(TransactionStatus status) throws TransactionException;
+
+    void rollback(TransactionStatus status) throws TransactionException;
+}
+
+
+What are the different propogation types for @Transactional annotation?
+
+Required , requires_new , nested.
+
